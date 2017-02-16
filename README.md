@@ -23,7 +23,7 @@ The idea is to log into a website where you can chouse the name, type and the pi
 - Auth0
 
 ##### Frontend
-Created with Angular 2 QuickStart. Also [ng2-bootstrap](https://valor-software.com/ng2-bootstrap/#/) was used for the modals, timepicker, tabs and etc.
+Created with Angular 2 QuickStart. Also [ng2-bootstrap](https://valor-software.com/ng2-bootstrap/#/) is used for the modals, timepicker, tabs and etc.
 
 ##### Backend
 Express is the perfect server side with routing and middleware.
@@ -64,4 +64,4 @@ Your Raspberry get the IP: 192.168.100.2 .
 When you configure your router port option for 77.70.71.33:8080 to be forward to 192.168.100.2:4444 , every time you type 77.70.71.33:8080 in your browser , it will refer you to 192.168.100.2:4444. 
 
 ## Presentation
-On the following [link]() you can find a presentation, based on this project.
+On the following [link](http://prezi.com/ebtje9_wylqg/?utm_campaign=share&utm_medium=copy) you can find a presentation, based on this project.
