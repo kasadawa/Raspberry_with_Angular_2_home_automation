@@ -6,7 +6,7 @@
 
 ## Raspberry requirements
 - [Raspberian](https://www.raspberrypi.org/downloads/raspbian/)
-- [NodeJS](https://nodejs.org/en/download/)
+- [NodeJS](https://nodejs.org/en/download/) (v4.7.2) 
 - [Johny Five](http://johnny-five.io/)
 - [Raspi-io](https://github.com/nebrius/raspi-io) 
 When you install them, watch carefully for other dependencies.
@@ -23,7 +23,7 @@ The idea is to log into a website where you can chouse the name, type and the pi
 - Auth0
 
 ##### Frontend
-Created with Angular 2 QuickStart. Also [ng2-bootstrap](https://valor-software.com/ng2-bootstrap/#/) is used for the modals, timepicker, tabs and etc.
+Created with Angular 2 QuickStart. Also [ng2-bootstrap](https://valor-software.com/ng2-bootstrap/#/) is used for the modals, timepicker, tabs and etc.[angular2-fontawesome](https://www.npmjs.com/package/angular2-fontawesome) is used for the font images. 
 
 ##### Backend
 Express is the perfect server side with routing and middleware.
