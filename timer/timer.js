@@ -1,4 +1,5 @@
 // for socket io 
+"use strict";
 var server = require('../server');
 var io = server.io;
 var http = server.http; //to remove
@@ -49,7 +50,7 @@ class Timer{
     updateDeviceTimer(value){
         this.device.onTimer = value ;
         if(!value){
-            router.updateDevice(this.device._id);
+            router.updateDevice(this.device._id, undefined);
             this.device.state = !this.device.state; // if the value is false  
         }
         //update both staten and timer 
@@ -73,7 +74,6 @@ var getTimer = (device) =>{
     io.emit('getTimer',device);
 }; 
 io.on('connection', function(socket){
-    console.log('a user connected');
     // getting the status or intteruption
     socket.on('setTimer', function(data){
         var trigger = data.trigger; 

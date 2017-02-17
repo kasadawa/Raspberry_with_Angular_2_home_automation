@@ -1,14 +1,9 @@
-var express = require('express')
+var express = require('express');
 var app = express();
-var path = require('path')
-var bodyParser = require('body-parser')
-
-
+var path = require('path');
+var bodyParser = require('body-parser');
 var http = require('http').Server(app);
-
-
-
-var port = 3000; 
+var port = 4444; 
 
   
 
@@ -28,10 +23,19 @@ var server = app.listen(port,()=>{
 })
 //socket-io
 var io = require('socket.io').listen(server);
+
 module.exports = {
     io: io , 
     http : http , 
 };
+
 var ioTimer = require('./timer/timer');
 var index = require('./routers/index');
-app.use('/',index.router);     
+app.use('/',index.router);
+app.use(redirectUnmatched);
+
+
+// redirecting to home if there is no router
+function redirectUnmatched(req, res) {
+  res.render('./index.html');
+}
